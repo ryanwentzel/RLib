@@ -1,13 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 
 namespace RLib.Extensions
 {
     public static class StreamExtensions
     {
+        /// <summary>
+        /// Reads the contents of a stream.
+        /// </summary>
+        /// <param name="stream">Stream to read from.</param>
+        /// <param name="initialLength">Initial buffer length.</param>
+        /// <returns>An array of bytes.</returns>
+        /// <remarks>
+        /// From http://www.yoda.arachsys.com/csharp/readbinary.html
+        /// </remarks>
         public static byte[] ReadFully(this Stream stream, int initialLength = 32768)
         {
             if (initialLength < 1)
