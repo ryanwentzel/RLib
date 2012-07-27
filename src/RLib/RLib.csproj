@@ -45,6 +45,12 @@
     <Compile Include="Check.cs" />
     <Compile Include="Collections\Generic\CircularBuffer.cs" />
     <Compile Include="Encryption.cs" />
+    <Compile Include="EventAggregator\EventHandlerOptions.cs" />
+    <Compile Include="EventAggregator\EventHandlers.cs" />
+    <Compile Include="EventAggregator\EventPublisher.cs" />
+    <Compile Include="EventAggregator\IEventHandler.cs" />
+    <Compile Include="EventAggregator\IEventPublisher.cs" />
+    <Compile Include="EventAggregator\LatchManager.cs" />
     <Compile Include="Extensions\ByteExtensions.cs" />
     <Compile Include="Extensions\EnumerableExtensions.cs" />
     <Compile Include="Extensions\EventExtensions.cs" />
