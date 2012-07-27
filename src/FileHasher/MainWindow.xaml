@@ -1,0 +1,46 @@
+﻿<Window x:Class="FileHasher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="File Hasher" Height="275" Width="535" ResizeMode="CanMinimize"
+        Loaded="Window_Loaded">
+    <StackPanel>
+        <GroupBox Header="Type" Margin="15">
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="MD5RadioButton" GroupName="HashType" Content="MD5" IsChecked="True" />
+                <RadioButton Name="SHA1RadioButton" GroupName="HashType" Margin="10 0 0 0" Content="SHA1" />
+            </StackPanel>
+        </GroupBox>
+        <Grid Margin="15 15 15 15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".60*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <TextBox Name="FilePathTextBox" Grid.Column="0" Grid.Row="0" IsReadOnly="True" />
+            <Button Name="SelectFileButton" Grid.Column="1" Grid.Row="0" Margin="10 0 0 0" Width="95" Height="35" Content="Select file" Click="SelectFileButton_Click" />
+        </Grid>
+        <DockPanel Margin="15 10 15 0">
+            <TextBox Name="HashTextBox"
+                    Background="Transparent"
+                     BorderThickness="0"
+                     FontSize="20"
+                     FontFamily="Courier New"
+                     FontWeight="Bold"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Center"
+                     Text="HASH VALUE"
+                     IsReadOnly="True">
+                <TextBox.CommandBindings>
+                    <CommandBinding Command="Cut" CanExecute="CommandBinding_CanExecuteCutOrPaste" />
+                    <CommandBinding Command="Paste" CanExecute="CommandBinding_CanExecuteCutOrPaste" />
+                </TextBox.CommandBindings>
+            </TextBox>
+        </DockPanel>
+        <DockPanel Margin="0 25 15 0" VerticalAlignment="Bottom">
+            <Button Name="ComputeButton" HorizontalAlignment="Center" Width="326" Height="35" Content="Compute Hash" Click="ComputeButton_Click" />
+        </DockPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tests>
+    <TestRecord Name="RLib">
+      <Tests>
+        <TestRecord Name="Collections">
+          <Tests>
+            <TestRecord Name="Generic">
+              <Tests>
+                <TestRecord Name="CircularBufferFixture">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2012-03-19T15:08:16</TestDate>
+                      <Status>Ignored</Status>
+                      <TotalFailures>0</TotalFailures>
+                      <TotalSuccess>0</TotalSuccess>
+                      <TotalIgnored>2</TotalIgnored>
+                      <Time />
+                    </UnitTestResult>
+                  </Results>
+                  <Tests>
+                    <TestRecord Name="Constructor_InvalidSize_ThrowsException">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2012-03-19T15:08:16</TestDate>
+                          <Status>Ignored</Status>
+                          <TotalFailures>0</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>1</TotalIgnored>
+                          <Time />
+                          <Message>Method Constructor_InvalidSize_ThrowsException's signature is not correct: it must not have parameters.</Message>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                        <UnitTestResult>
+                          <TestDate>2012-03-19T15:21:42</TestDate>
+                          <Status>Ignored</Status>
+                          <TotalFailures>0</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>1</TotalIgnored>
+                          <Time />
+                          <Message>Method Constructor_InvalidSize_ThrowsException's signature is not correct: it must not have parameters.</Message>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                    <TestRecord Name="Size_Get_ReturnsSizePassedToConstructor">
+                      <Results>
+                        <UnitTestResult>
+                          <TestDate>2012-03-19T15:08:16</TestDate>
+                          <Status>Ignored</Status>
+                          <TotalFailures>0</TotalFailures>
+                          <TotalSuccess>0</TotalSuccess>
+                          <TotalIgnored>1</TotalIgnored>
+                          <Time />
+                          <Message>Method Size_Get_ReturnsSizePassedToConstructor's signature is not correct: it must not have parameters.</Message>
+                          <ConsoleOutput />
+                          <ConsoleError />
+                        </UnitTestResult>
+                      </Results>
+                    </TestRecord>
+                  </Tests>
+                </TestRecord>
+              </Tests>
+            </TestRecord>
+          </Tests>
+        </TestRecord>
+      </Tests>
+    </TestRecord>
+  </Tests>
+</TestRecord>

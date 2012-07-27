@@ -1,0 +1,9 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" binpathtype="Auto">
+    <assembly path="RLib.Test\bin\Debug\RLib.Test.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="RLib.Test\bin\Release\RLib.Test.dll" />
+  </Config>
+</NUnitProject>
