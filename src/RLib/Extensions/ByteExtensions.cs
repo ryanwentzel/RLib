@@ -17,16 +17,5 @@ namespace RLib.Extensions
 
             return builder.ToString();
         }
-
-        public static string ComputeMD5Hash(this IEnumerable<byte> buffer)
-        {
-            var builder = new StringBuilder();
-            foreach (var item in buffer)
-            {
-                builder.Append(item.ToString(HexFormatString));
-            }
-
-            return builder.ToString();
-        }
     }
 }
