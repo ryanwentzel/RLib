@@ -55,7 +55,7 @@ namespace RLib.Security.Cryptography
             using (var rng = new RNGCryptoServiceProvider())
 			{
 	            var buffer = new byte[length];
-	            rng.GetBytes(buffer);
+	            rng.GetNonZeroBytes(buffer);
 	
 	            return buffer;
 			}
